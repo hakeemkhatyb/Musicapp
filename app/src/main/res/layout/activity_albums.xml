@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.example.hakeemalkhateb.musicapp.Albums">
+
+    <TextView
+        android:id="@+id/albumsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALBUMS"
+        android:textAlignment="center"
+        android:textColor="#F06e63"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/albumsdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Display albums list"
+        android:textColor="#FFF"
+
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/albumsTitle" />
+
+
+    <ImageView
+        android:id="@+id/album1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/album1"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/albumsdesc" />
+
+    <ImageView
+        android:id="@+id/album2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:scaleType="centerCrop"
+        android:src="@drawable/album2"
+
+        app:layout_constraintLeft_toRightOf="@id/album1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/album1" />
+
+    <ImageView
+        android:id="@+id/album3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginTop="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/album3"
+        app:layout_constraintLeft_toLeftOf="@id/album2"
+        app:layout_constraintRight_toRightOf="@id/album2"
+        app:layout_constraintTop_toBottomOf="@id/album2" />
+
+    <ImageView
+        android:id="@+id/album4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+
+        android:scaleType="centerCrop"
+        android:src="@drawable/album4"
+        app:layout_constraintLeft_toLeftOf="@id/album1"
+        app:layout_constraintRight_toRightOf="@id/album1"
+        app:layout_constraintTop_toBottomOf="@id/album1"
+        app:layout_constraintTop_toTopOf="@id/album3" />
+
+    <ImageButton
+        android:id="@+id/songs"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/songslogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageButton
+        android:id="@+id/albums"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/albumslogo"
+        app:layout_constraintBottom_toBottomOf="@+id/songs"
+        app:layout_constraintLeft_toRightOf="@+id/songs" />
+
+    <ImageButton
+        android:id="@+id/playlist"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nowplayinglogo"
+        app:layout_constraintBottom_toBottomOf="@+id/albums"
+
+
+        app:layout_constraintLeft_toRightOf="@+id/albums" />
+
+    <ImageButton
+        android:id="@+id/payment"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/paymentlogo"
+        app:layout_constraintBottom_toBottomOf="@+id/songs"
+        app:layout_constraintLeft_toRightOf="@+id/playlist" />
+
+</android.support.constraint.ConstraintLayout>
